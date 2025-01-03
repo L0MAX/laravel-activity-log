@@ -1,0 +1,43 @@
+{
+  "name": "l0max/laravel-activity-log",
+  "description": "A Laravel package to log and store user activities across the application",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "laravel-activity-log",
+    "laravel-log",
+    "laravel-security",
+    "laravel-activity",
+    "laravel-package",
+    "PHP"
+  ],
+  "homepage": "https://github.com/l0max/laravel-activity-log",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1.3|7.2.*|7.3.*|7.4.*|8.*",
+    "laravel/framework": "8.*|9.*|10.*|11.*",
+    "laravel/passport": "^12.3"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "L0MAX\\ActivityLog\\": "src/",
+      "Database\\Factories\\": "database/factories/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "L0MAX\\ActivityLog\\ActivityLogServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "L0MAX",
+      "email": "ankahdonatus@gmail.com"
+    }
+  ],
+  "minimum-stability": "beta",
+  "prefer-stable": true
+
+}
